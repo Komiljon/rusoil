@@ -1,0 +1,14 @@
+.mf-control-required { color: #f00; }
+
+@media(min-width:1024px){
+	.col-lg-25{
+		flex: 0 0 calc(20% - 1.5rem)!important;
+	    width: calc(20% - 1.5rem)!important;
+	}
+
+	.count-btns{
+		position: absolute;
+		right: 0;
+		top: 3.5rem;
+	}
+}
