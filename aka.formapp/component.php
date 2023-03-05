@@ -143,7 +143,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["submit"] <> '' && (!isset($_P
 				CEvent::Send($arParams["EVENT_NAME"], SITE_ID, $arFields);
 			}
 
-
+			/*
 			$subject = $_POST["orderApplication_title"]; 
 			$message .= 
 			'Категория: ' . $arFields["CATEGORY"]
@@ -161,7 +161,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["submit"] <> '' && (!isset($_P
 			$headers .= "Reply-To: " . $arParams["EMAIL_TO"] . "\r\n"; 
 
 			@mail($arParams["EMAIL_TO"], $subject, $message, $headers);		
-			
+			*/
 			
 			LocalRedirect($APPLICATION->GetCurPageParam("success=".$arResult["PARAMS_HASH"], Array("success")));
 		}
